@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite">
+	
+	<listeners>
+<listener class-name="TestScripts.Listners"></listener>
+	
+</listeners>
+	
+	
+	
+	
+  <test thread-count="5" name="Test">
+    <classes>
+<!--      <class name="TestScripts.QaLegandUsersTest">-->
+	  <class name="TestScripts.QaSupplierTest">
+		<methods> 
+<!--	<include name="createaUser"></include>-->
+<!--			<include name="deleteUser"></include>-->
+<!--		<include name="editUser"></include>-->
+<!--<include name ="createSalesAgent"></include>-->
+
+<!--<include name="createSupplier"></include>-->
+<include name="editSupplier"></include>
+<!--<include name="SerchRolesByNumber"></include>-->
+<!--<include name="editRoles"></include>-->
+<!--<include name="deleteRoles"></include>-->
+<!--<include name="viewSupplier"></include>-->
+
+
+<!--<include name="AddRoles"></include>-->
+		</methods>  
+	  </class>
+      
+    </classes>
+  </test> 
+</suite> 
