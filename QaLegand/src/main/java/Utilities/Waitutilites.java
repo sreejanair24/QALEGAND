@@ -42,6 +42,7 @@ public static void waitForanElemnetAttributeTobe (WebDriver driver,WebElement el
 	WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(Constants.EXPLICITWAIT));//calling static variable from constant class
 	wait.until(ExpectedConditions.attributeToBe(element,attributename, attributevalue));
 
+
 	}
 public static void waitForElamenttobeInvisible(WebDriver driver,WebElement element)
 {

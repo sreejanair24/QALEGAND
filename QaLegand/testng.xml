@@ -12,7 +12,7 @@
 	
   <test thread-count="5" name="Test">
     <classes>
-<!--      <class name="TestScripts.QaLegandUsersTest">-->
+<!--    <class name="TestScripts.QaLegandUsersTest">-->
 	  <class name="TestScripts.QaSupplierTest">
 		<methods> 
 <!--	<include name="createaUser"></include>-->

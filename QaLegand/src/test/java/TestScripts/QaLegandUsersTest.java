@@ -97,7 +97,7 @@ homepage.clickOnSalesCommissionAgentbutton();
 addsalesAgent.clickSalesAgentbtn();
 addsalesAgent.addSalesCommission("demoname", "25");
 addsalesAgent.searchAgentName("demoname");
-Assert.assertEquals(addsalesAgent.equals(driver), false);
+Assert.assertEquals(addsalesAgent.equals("demoname"), false);
 
 
 }
@@ -144,7 +144,7 @@ public void deleteRoles() throws InterruptedException
     roles.selectRoles();
     roles.clickSave();
     roles.clickDeleteBtn();
-   Thread.sleep(1000);
+   //Thread.sleep(3000);
     roles.deletePopup();
 	
 	}

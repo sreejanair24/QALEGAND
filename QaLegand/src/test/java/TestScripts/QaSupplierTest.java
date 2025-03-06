@@ -51,18 +51,14 @@ public class QaSupplierTest extends BaseClass {
 		String mob=ExcelUtilites.getIntegerData(1, 2, Constants.EXCELFILEPATH, "Sheet1")+Fakerutility.getRandomnumber();
 		supplierPage.addNum(mob);
 		supplierPage.saveSupp();
-		Thread.sleep(2000);
+		//Thread.sleep(2000);
 		supplierPage.searchsupplier(suppN);
-		Thread.sleep(3000);
+		//Thread.sleep(3000);
 		supplierPage.clickEditSup();
 		String newsupN=ExcelUtilites.getStringData(2, 3, Constants.EXCELFILEPATH, "Sheet1")+Fakerutility.getRandomnumber();
-		//supplierPage.addSupName(newsupN);
-		Thread.sleep(3000);
-		System.out.println("suppname updtaed");
 		Thread.sleep(3000);
 		supplierPage.updateButton(newsupN);
-		System.out.println("suppname updtaed");
-		
+		Thread.sleep(3000);
 		supplierPage.searchsupplier(newsupN);
 		Thread.sleep(3000);
 	}

@@ -46,8 +46,10 @@ WebElement  viewBtn;
 	}
 	public void searchsupplier(String suprname)
 	{
+		Waitutilites.waitForClickingElemnt(driver, searchSupp);
 		Pageutilities.clearText(searchSupp);
 		searchSupp.sendKeys(suprname);
+		
 	}
 public void clickAddSupp()
 	
@@ -98,7 +100,9 @@ public void clickAddSupp()
 		{
 			Pageutilities.clearText(SuppName);
 			Pageutilities.enterText(SuppName, newname);
+			//Waitutilites.waitForClickingElemnt(driver,updatBtn);
 			Pageutilities.clickOnanElement(updatBtn);
+			
 		}
 		
 		public void viewSup()

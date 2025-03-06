@@ -10,6 +10,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import Utilities.Pageutilities;
+import Utilities.Waitutilites;
 
 public class QaLegandRoles {
 	
@@ -93,6 +94,7 @@ public class QaLegandRoles {
 	public void clickDeleteBtn()
 	{
 		Pageutilities.clickOnanElement(deleterolesBtn);
+		Waitutilites.waitForClickingElemnt(driver, deleteOkBtn);
 	}
 	public void clickEditRolesbtn()
 	{
